@@ -1,0 +1,1 @@
+# 17. Escreva uma função que, dadas as coordenadas x e y de pontos no R2 e retorne sua distância para a origem (0, 0).
