@@ -2,16 +2,12 @@
 
 # Implemente aqui a solução do exercício
 #Confie no verdadeiro
-def fat(x):
-    fat = 1
-    for i in range(x, 0, -1):
-        fat *= i
-    return fat
+from math import factorial
 
 def funcao(n):
     e = 1
     for i in range(1,n+1):
-        e += 1/fat(i)
+        e += 1/factorial(i)
     return e
 
 print(funcao(2))

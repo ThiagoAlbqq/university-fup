@@ -2,14 +2,10 @@
 
 # Implemente aqui a solução do exercício
 # Não testei - preguiça
-def fat(x):
-    fat = 1
-    for i in range(x, 0, -1):
-        fat *= i
-    return fat
+from math import factorial
 
 def funcao(n, k):
-    cb = fat(n)/(fat(k) * fat(n-k))
+    cb = factorial(n)/(factorial(k) * factorial(n-k))
     return cb
 
 n = int(input())
