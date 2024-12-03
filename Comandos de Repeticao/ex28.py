@@ -2,4 +2,4 @@
 
 # Implemente aqui a solução do exercício
 for i in range(10):
-    print("Meu Curso é Show")
+    print("Meu Curso eh Show")

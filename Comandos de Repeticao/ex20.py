@@ -7,4 +7,3 @@ def funcao(n):
         print("*" * i)
     for i in range(n - 1, 0, -1):
         print("*" * i)
-funcao(4)

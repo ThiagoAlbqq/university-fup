@@ -3,7 +3,7 @@
 # Implemente aqui a solução do exercício
 from math import factorial
 
-def triangulo_de_pascal(n):
+def funcao(n):
     linha = 0
     while linha < n:
         coluna = 0
@@ -15,4 +15,5 @@ def triangulo_de_pascal(n):
         linha += 1
 
 n = int(input())
+funcao(n)
 

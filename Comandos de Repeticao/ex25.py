@@ -6,5 +6,3 @@ def funcao(n):
     for i in range(1, n+1):
         s += (i**2 + 1)/(i + 3)
     return s
-
-print(funcao(2))

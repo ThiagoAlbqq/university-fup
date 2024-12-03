@@ -12,4 +12,3 @@ def funcao(p):
         sum += digito
         fat //= 10
     return sum
-print(funcao(4))

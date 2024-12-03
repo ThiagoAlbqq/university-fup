@@ -3,7 +3,7 @@
 # Implemente aqui a solução do exercício
 def funcao(n):
     fatEx = n
-    for i in range(n-1, 0, -1):
-        fatEx **= i
-    return fatEx
-print(funcao(3))
+    expoente = n-1
+    for i in range(1,n-1):
+        expoente **= i
+    return fatEx ** expoente

@@ -9,5 +9,3 @@ def funcao(n):
     for i in range(1,n+1):
         e += 1/factorial(i)
     return e
-
-print(funcao(2))

@@ -5,4 +5,4 @@ sum = 0
 for i in range(0,10):
     x = float(input())
     sum += x
-print(sum)
+print(f"{sum:.2f}")

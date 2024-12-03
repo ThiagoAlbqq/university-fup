@@ -3,7 +3,7 @@
 # Implemente aqui a solução do exercício
 n = int(input())
 ultimo = 1
-for linha in range(n + 1):
+for linha in range(1,n + 1):
     for _ in range(linha):
         print(f"{ultimo} ", end="")
         ultimo+=1

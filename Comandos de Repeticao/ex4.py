@@ -6,4 +6,4 @@ for i in range(0,10):
     x = int(input())
     sum += x
 media = sum/10
-print(media)
+print(f"{media:.2f}")

@@ -8,12 +8,11 @@
 def funcao(n):
     f1 = 1
     f2 = 1
-    temp = 0
-    for i in range(n-2):
+    temp = 1
+    for _ in range(n-2):
         temp = f1 + f2
         f1 = f2
         f2 = temp
     return temp
 
-print(funcao(5))
 

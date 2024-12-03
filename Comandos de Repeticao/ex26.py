@@ -5,14 +5,7 @@ from math import factorial
 
 def funcao(x, n):
     taylor = 0
-    for k in range(n):
+    for k in range(n+1):
         termo = ((-1)**k * x**(2*k + 1)) / factorial(2*k + 1)
         taylor += termo
     return taylor
-
-x = float(input())
-n = int(input())
-
-# Cálculo e exibição do resultado
-resultado = funcao(x, n)
-print(resultado)

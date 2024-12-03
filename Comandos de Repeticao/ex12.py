@@ -7,7 +7,3 @@ from math import factorial
 def funcao(n, k):
     cb = factorial(n)/(factorial(k) * factorial(n-k))
     return cb
-
-n = int(input())
-k = int(input())
-print(funcao(n,k))

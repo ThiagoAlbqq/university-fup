@@ -5,7 +5,6 @@
 def funcao(n):
     harmonicNumber = 0
     for i in range(1,n+1):
-        harmonicNumber += 1/n
-    return harmonicNumber
 
-print(funcao(3))
+        harmonicNumber += 1/i
+    return harmonicNumber

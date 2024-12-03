@@ -2,9 +2,7 @@
 
 # Implemente aqui a solução do exercício
 def funcao(n):
-    temp = 1 
-    for i in range(1, n):
-        print("*" * temp)
-        temp += 2
-funcao(6)
+    for i in range(1, n + 1):
+        espaços = n - i
+        print(' ' * espaços + '*' * (2 * i - 1))
 
