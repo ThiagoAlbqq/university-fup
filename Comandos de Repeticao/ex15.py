@@ -2,7 +2,11 @@
 
 # Implemente aqui a solução do exercício
 #Confie no verdadeiro
-from math import factorial
+def factorial(x):
+    fat = 1
+    for i in range(x, 0, -1):
+        fat *= i
+    return fat
 
 def funcao(n):
     e = 1

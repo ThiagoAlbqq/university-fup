@@ -2,7 +2,11 @@
 
 # Implemente aqui a solução do exercício
 # Não testei - preguiça
-from math import factorial
+def factorial(x):
+    fat = 1
+    for i in range(x, 0, -1):
+        fat *= i
+    return fat
 
 def funcao(n, k):
     cb = factorial(n)/(factorial(k) * factorial(n-k))

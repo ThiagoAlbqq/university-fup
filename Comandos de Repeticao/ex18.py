@@ -3,12 +3,12 @@
 # Implemente aqui a solução do exercício
 # Deus é muito bom, criou a coquinha para nos salvar.
 def funcao(p):
-    fat = 1
-    sum = 0
-    for i in range(1,p+1):
-        fat *= i
-    while fat > 0:
-        digito = fat % 10
-        sum += digito
-        fat //= 10
-    return sum
+    fatorial = 1
+    soma = 0
+    for i in range(1, p + 1):
+        fatorial *= i
+    while fatorial:
+        soma += fatorial % 10
+        fatorial //= 10
+
+    return soma
