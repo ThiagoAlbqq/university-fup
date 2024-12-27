@@ -3,4 +3,7 @@
 wage = float(input())
 loan = float(input())
 
-print("Emprestimo não concedido" if loan > (wage / 5) else "Emprestimo concedido")
+if loan > (wage / 5):
+    print("Emprestimo não concedido")
+else:
+    print("Emprestimo concedido")

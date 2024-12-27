@@ -6,4 +6,7 @@ b = input()
 if a == b:
     print("Números iguais")
 else:
-    print(a if a > b else b)
+    if a > b:
+        print(a)
+    else: 
+        print(b)

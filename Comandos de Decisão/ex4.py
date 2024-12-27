@@ -5,7 +5,8 @@ maior = float('-inf')
 
 while cont > 0:
     a = float(input("Digite um número: "))
-    maior = a if maior > a else maior
+    if maior > a: 
+        maior = a
     cont -= 1
 
 print(f"O maior número é: {maior}")

@@ -2,4 +2,7 @@
 import math
 a = float(input())
 
-math.sqrt(a) if a >=0 else print("Numero invalido")
+if a >= 0: 
+    math.sqrt(a)
+else:
+    print("Numero invalido")

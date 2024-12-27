@@ -2,4 +2,7 @@
 
 a = int(input())
 
-print("Par" if (a % 2)== 0 else "Impar")
+if (a % 2)== 0:
+    print("Par")
+else: 
+    print("Impar")
