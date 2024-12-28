@@ -1,6 +1,6 @@
-maior = -99999
-meio = -99999
-menor = 99999
+maior = float("-inf")
+meio = float("-inf")
+menor = float("inf")
 
 cont = 3
 
