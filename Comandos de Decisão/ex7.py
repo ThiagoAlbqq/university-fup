@@ -4,6 +4,6 @@ wage = float(input())
 loan = float(input())
 
 if loan > (wage / 5):
-    print("Emprestimo não concedido")
+    print("Emprestimo nao concedido")
 else:
     print("Emprestimo concedido")

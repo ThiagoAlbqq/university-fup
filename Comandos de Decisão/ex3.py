@@ -4,7 +4,7 @@ cont = 4
 soma = 0
 while cont > 0:
     a = int(input())
-    if (a & 2) == 0:
+    if (a % 2) == 0:
         soma += a
     cont -= 1
 

@@ -1,19 +1,24 @@
 # Escreva um algoritmo que leia um conjunto de n números e mostre qual foi o menor e o maior valor fornecido.
 
-maior = float("-inf")
-menor = float("inf")
+maior = 0
+menor = 0
+cont = int(input())
+i = 0
 
-array = [1,2,3,4,-1]
-cont = 0
-
-while cont < len(array):
-    a = array[cont]
+while i < cont:
+    a = float(input())
+    
+    if i == 0:
+        maior = a
+        menor = a
     
     if a >= maior:
         maior = a
     elif a <= menor:
         menor = a
 
-    cont += 1
+    i += 1
 
-print(menor, maior)
+print(f'{menor:.2f}')
+print(f'{maior:.2f}')
+

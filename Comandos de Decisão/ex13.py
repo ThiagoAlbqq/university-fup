@@ -20,12 +20,16 @@ a = float(input())
 b = float(input())
 c = float(input())
 
-hasRoot, x1, x2 = raizes(a,b,c)
-if hasRoot: 
-    if x1 == x2:
-        print("Raiz unica")
+if a != 0:
+    hasRoot, x1, x2 = raizes(a,b,c)
+    if hasRoot: 
+        if x1 == x2:
+            print(f'{x1:.2f}')
+            print("Raiz unica")
+        else:
+            print(f'{x1:.2f}')
+            print(f'{x2:.2f}')
     else:
-        print(x1)
-        print(x2)
+        print("Nao existe raiz real")
 else:
-    print("Não existe raiz real")
+    print("Nao eh equacao do 2o grau")

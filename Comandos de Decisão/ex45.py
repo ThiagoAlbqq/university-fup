@@ -7,20 +7,24 @@ def funcao(texto, passos):
     resultado = list(texto)
 
     for char in range(len(resultado)):
-        if 'A' <= resultado[char] <= 'Z':
+        if 'A' <= resultado[char] <= 'Z':  # Se for uma letra maiúscula
             novo_char = chr((ord(resultado[char]) - ord('A') + passos) % 26 + ord('A'))
-            resultado[char] = (novo_char)
-        elif 'a' <= resultado[char] <= 'z': 
+            resultado[char] = novo_char
+        elif 'a' <= resultado[char] <= 'z':  # Se for uma letra minúscula
             novo_char = chr((ord(resultado[char]) - ord('a') + passos) % 26 + ord('a'))
-            resultado[char] = (novo_char)
+            resultado[char] = novo_char
         else:
-            resultado[char] = (char)
+            # Deixe o caractere inalterado se não for uma letra
+            resultado[char] = resultado[char]
     
     return "".join(resultado)
 
-str1 = input()
-passos = int(input())
+# Leitura do texto e número de passos
+str1 = input("Digite o texto: ")
+passos = int(input("Digite o número de passos: "))
 
+# Codificação do texto
 str1_codificada = funcao(str1, passos)
 
+# Exibição do resultado
 print(str1_codificada)

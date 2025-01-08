@@ -8,10 +8,18 @@ mNI= 1
 n = int(input())
 m = int(input())
 
-for i in range(n, m+1):
-    if i % 2 == 0:
-        sNP += i
-    else:
-        mNI *= i
+if n <= m:
+    for i in range(n, m+1):
+        if i % 2 == 0:
+            sNP += i
+        else:
+            mNI *= i
+else:
+    for i in range(m, n+1):
+        if i % 2 == 0:
+            sNP += i
+        else:
+            mNI *= i
 
-print(sNP, mNI)
+print(sNP)
+print(mNI)

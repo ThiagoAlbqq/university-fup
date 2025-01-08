@@ -10,20 +10,25 @@ num2 = float(input())
 escolha = int(input())
 
 if escolha == 0:
-    print("Aqui acabou")
+    print("Erro")
+    
+if escolha >= 5:
+    print("Erro")
 
 if escolha == 1:
-    (num1 + num2) / 2
+    print(f'{(num1 + num2) / 2:.2f}')
 
 if escolha == 2:
     if (num1 > num2): 
-        num1 - num2
+        print(f'{num1 - num2:.2f}')
     else: 
-        num2 - num1
+        print(f'{num2 - num1:.2f}')
 
 if escolha == 3:
-    num1 * num2
+    print(f'{num1 * num2:.2f}')
 
 if escolha == 4:
     if (num2 != 0):
-        num1/num2
+        print(f'{num1/num2:.2f}')
+    else:
+        print("Erro")

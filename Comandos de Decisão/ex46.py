@@ -8,8 +8,7 @@
 str1 = input()
 
 def funcao(texto):
-    texto = texto.replace(" ", "")
-    print(texto)
+    texto = texto.replace(" ", "").replace("-", "").replace(",", "").replace(".", "").lower()
 
     for i in range(int(len(texto)/2)):
         if texto[i] != texto[len(texto) - 1 - i]:

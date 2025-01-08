@@ -12,12 +12,17 @@ def sub(a,b): return a - b
 def div(a,b): return a / b
 
 while True:
+    print("1 - Adicao")
+    print("2 - Subtracao")
+    print("3 - Multiplicacao")
+    print("4 - Divisao")
+    print("5 - Saida")
     escolha = int(input())
     if escolha == 5: break
     a = float(input())
     b = float(input())
 
-    if escolha == 1: print(soma(a,b))
-    if escolha == 2: print(sub(a,b))
-    if escolha == 3: print(mult(a,b))
-    if escolha == 4: print(div(a,b))
+    if escolha == 1: print(f'{soma(a,b):.2f}')
+    if escolha == 2: print(f'{sub(a,b):.2f}')
+    if escolha == 3: print(f'{mult(a,b):.2f}')
+    if escolha == 4: print(f'{div(a,b):.2f}')

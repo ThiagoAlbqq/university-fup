@@ -4,7 +4,7 @@ cont = 3
 soma = 0
 
 while cont > 0:
-    a = float(input("Digite um número entre 0 e 10: "))
+    a = float(input())
     if 0 <= a <= 10:
         soma += a
         cont -= 1
@@ -13,7 +13,7 @@ while cont > 0:
 
 if cont == 0:
     media = soma / 3
-    print(f"A média é: {media:.2f}")
+    print(f"{media:.2f}")
 else:
-    print("A média não pôde ser calculada devido a entradas inválidas.")
+    print("Nota invalida")
 

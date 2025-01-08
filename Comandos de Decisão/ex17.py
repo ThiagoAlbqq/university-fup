@@ -2,11 +2,12 @@
 
 while True: 
 
-    escolha = float(input())
+    escolha = int(input())
+    if escolha <= 0: break
     q = escolha ** 2
     c = escolha ** 3
     sqrt = escolha ** (1/2)
 
-    print(q,c,sqrt)
-
-    if escolha < 0: break
+    print(f'{q:.2f}')
+    print(f'{c:.2f}')
+    print(f'{sqrt:.2f}')

@@ -1,13 +1,11 @@
-# Ler um número inteiro entre 1 e 7
-a = int(input("Digite um número entre 1 e 7: "))
+a = int(input())
 
-# Verificar e imprimir o dia correspondente
 if a == 1:
     print("Domingo")
 elif a == 2:
     print("Segunda-feira")
 elif a == 3:
-    print("Terça-feira")
+    print("Terca-feira")
 elif a == 4:
     print("Quarta-feira")
 elif a == 5:
@@ -15,6 +13,6 @@ elif a == 5:
 elif a == 6:
     print("Sexta-feira")
 elif a == 7:
-    print("Sábado")
+    print("Sabado")
 else:
-    print("Número inválido! Digite um número entre 1 e 7.")
+    print("Número inválido!")

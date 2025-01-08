@@ -9,3 +9,5 @@ for i in range(1, n):
 
 if(soma == n):
     print("Perfeito")
+else:
+    print("Nao perfeito")

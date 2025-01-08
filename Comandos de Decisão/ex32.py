@@ -5,11 +5,19 @@ cont = 0
 n1 = int(input())
 n2 = int(input())
 
-while True:
-    if n2 * cont > n1:
-        cont -= 1
-        break
-    else:
-        cont += 1
-
+if n1 >= n2:
+    while True:
+        if n2 * cont > n1:
+            cont -= 1
+            break
+        else:
+            cont += 1
+else:
+    while True:
+        if n1 * cont > n2:
+            cont -= 1
+            break
+        else:
+            cont += 1 
+    
 print(cont)
