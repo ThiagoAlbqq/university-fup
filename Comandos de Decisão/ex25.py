@@ -3,7 +3,7 @@
 soma = 0
 contador = 0
 
-while contador < 10:
+while contador <= 10:
     num = int(input())
     if num >=0:
         soma += num
